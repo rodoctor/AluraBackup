@@ -1,0 +1,75 @@
+@media (min-width: 600px) {
+    html {
+        font-size: 1.1125em;
+    }
+}
+
+@media (min-width: 1000px) {
+    html {
+        font-size: 1.25em;
+    }
+}
+
+.secao {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .secao {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (min-width: 1000px) {
+    .secao {
+        width: 33.333%;
+        float: left;
+    }
+}
+
+
+.mini {
+    width: 50%;
+    float: left;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.logo,
+.secao {
+    padding: 0 1%;
+}
+
+/* evita que a imagem estoure na página */
+img {
+    max-width: 100%;
+}
+
+/* efeito escorrega para baixo, inline-block */
+.logo,
+.busca,
+.barra-nav,
+.menu-principal {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu-principal li {
+    float:left;
+}
+
+.header {
+    padding: 0.5em 0;
+}
+
+.destaques {
+    margin-top: 1em;
+}
+
+.barra-nav {
+    margin: 0.4em 0;
+}
