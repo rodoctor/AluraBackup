@@ -19,4 +19,15 @@
         return mysqli_query($conexao, $query);
     }
 
+    function buscaProduto($conexao, $id) {
+        $query = "select * from produtos where id = {$id}";
+        $resultado = mysqli_query($conexao, $query);
+        return mysqli_fetch_assoc($resultado); //retorna um valor
+    }
+
+    function alteraProduto($conexao, $id, $produto, $preco, $descricao, $usado, $categoria_id) {
+        $query = "update produtos set produto = '{$produto}', preco = {$preco}, descricao = '{$descricao}', usado = {$usado}, categoria_id = {$categoria_id} where id = {$id}";
+        return mysqli_query($conexao, $query);
+    }
+
 ?>
